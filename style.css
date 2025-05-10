@@ -1,3 +1,4 @@
+/* STYLE FOR ALL */
 *{
     margin: 0;
     padding: 0;
@@ -7,14 +8,17 @@
     scroll-behavior: smooth;
     font-family: 'Poppins';
 }
+/* COLOR VARIABLES */
 :root{
         --background: rgb(24,24,24);
         --second-background: rgb(21,21,21);
 }
+/* BODY ELEMENT */
 body{
     min-height: 100vh;
     background-color: var(--background); 
 }
+/* NAVIGATION */
 nav{
     position: fixed;
     top: 0;
@@ -65,20 +69,24 @@ nav ul a:hover{
     background-color: white;
     color: var(--background);
 }
+/* ALL SPAN ELEMENTS */
 span{
     background: linear-gradient(to right, #6cff52, #3ec5ff);
     background-clip: text;
     color: transparent;
 }
+/* MENU BUTTON */
 #menu{
     color: white;
     font-size: 3em;
     display: none;
 }
+/* SECTION ELEMENTS */
 section{
     min-height: 100vh;
     padding: 5% 15%;
 }
+/* HOME SECTION */
 #home{
     display: flex;
     flex-direction: column;
@@ -107,6 +115,82 @@ info-box{
     font-size: 2em;
     font-weight: 400;
 }
-info-box p{
+.info-box p{
     opacity: 0.7;
+}
+.btn-box{
+    display: flex;
+    gap: 1em;
+}
+.btn .btn:nth-of-type(2){
+    background-color: white;
+    color: var(--background);
+}
+.btn .btn:nth-of-type(2):hover{
+    background-color: var(--background);
+    color: white;
+}
+/* SCROLLBAR */
+::-webkit-scrollbar{
+    width: 20px;
+    background-color: var(--background);
+}
+::-webkit-scrollbar-thumb{
+    background: linear-gradient(to bottom, #6cff52, #3ec5ff);
+}
+/*ABOUT SECTION*/
+#about{
+    background-color: var(--second-background);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 5em
+}
+#about img{
+    width: 30vw;
+    border-radius: 1em;
+}
+.about-box{
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    gap: 2em;
+    /* background-color: rgb(241, 181, 91); */
+}
+.about-box h1{
+    font-size: 5em;
+}
+.about-box p{
+    color: white;
+    opacity: 0.8;
+}
+.skills{
+    display: flex;
+    text-align: left;
+    gap: 10em;
+}
+.skills ul{
+    font-size: 1.3em;
+    font-weight: 500;
+    display: flex;
+    flex-direction: column;
+    color: white;
+    opacity: 0.8;
+    align-items: baseline;
+}
+.skills ul li span{
+    display: flex;
+    align-items: center;
+    gap: 0.5em;
+    font-size: 1.3em;
+    transition: 0.3s ease-in-out;
+}
+.skills ul li span:hover{
+    transform: translateX(10px);
+}
+.skills ul li i{
+    font-size: 1.2em;
+}
+.about-box h2{
+    font-size: 2.5em;
 }
