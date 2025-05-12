@@ -96,11 +96,11 @@ section{
     color: white;
 }
 #home img{
-    width: 18vw;
+    width: 16vw;
     border-radius: 50%;
-    margin-top: 3em;
+    margin-top: 4em;
 }
-info-box{
+.info-box{
     display: flex;
     flex-direction: column;
     text-align: center;
@@ -261,4 +261,51 @@ form input{
 }
 form input:focus{
     background: rgb(229, 229, 229);
+}
+/* FOOTER SECTION */
+footer{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 10em;
+    bottom: 0;
+    width: 100%;
+    padding: 5em 15%;
+}
+.col-left{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+}
+.col-box{
+    display: flex;
+    align-items: center;
+    gap: 1em;
+}
+.col-box i{
+    font-size: 2em;
+}
+.col-box span{
+    font-size: 1.2em;
+}
+.col-right{
+    display: flex;
+    flex-direction: column;
+    gap: 1em;
+    color: white;
+    max-width: 500px;
+}
+.col-right .social-icons{
+    display: flex;
+    align-items: baseline;
+    justify-content: left;
+    gap: 1em;
+}
+.col-right .social-icons i{
+    font-size: 2em;
+    transition: 0.2s ease-in-out;
+    cursor: pointer;
+}
+.social-icons i:hover{
+    color: white;
 }
